@@ -1,5 +1,5 @@
 --SCRIPT DE INSERCION
-use HOTEL21;   
+use HOTEL;   
 	--OK
 	INSERT INTO GENERO(IdGenero,NomGenero) VALUES(1,'masculino')
     INSERT INTO GENERO(IdGenero,NomGenero) VALUES(0,'femenino')
@@ -28,7 +28,7 @@ use HOTEL21;
         INSERT INTO TIPO_EMPLEADO(IdTipoEmp,nomTipoEmp) VALUES(1503,'conserje')
 		--OK
         INSERT INTO SERVICIO(IdServicio,NomServicio,EstServicio) VALUES(1104,'masajista',0) -- estado de servicio es 1 si activo y 0 no activo
-         INSERT INTO SERVICIO(IdServicio,NomServicio,EstServicio) VALUES(1204,'gastronómicos',1)
+         INSERT INTO SERVICIO(IdServicio,NomServicio,EstServicio) VALUES(1204,'gastronomicos',1)
          INSERT INTO SERVICIO(IdServicio,NomServicio,EstServicio) VALUES(1304,'bartender',1)
          INSERT INTO SERVICIO(IdServicio,NomServicio,EstServicio) VALUES(1404,'spa',1)
          INSERT INTO SERVICIO(IdServicio,NomServicio,EstServicio) VALUES(1504,'dj',1)
@@ -55,20 +55,26 @@ use HOTEL21;
 	INSERT INTO SALAXHOTEL(IdHotel,IdPais,IdSala,IdSalaXHotel,condSalaXHotel) VALUES(1224,1406,1411,1413,0)
 	INSERT INTO SALAXHOTEL(IdHotel,IdPais,IdSala,IdSalaXHotel,condSalaXHotel) VALUES(1225,1506,1511,1513,0)
 
+		INSERT INTO CLIENTE(IdCliente,NomCliente,ApeCliente,DirCliente,IdGenero,IdDocIdentidad) VALUES(1121,'jose alexander','deras lara','colonia cima1,cuscatlan',1,1105)
+        INSERT INTO CLIENTE(IdCliente,NomCliente,ApeCliente,DirCliente,IdGenero,IdDocIdentidad) VALUES(1221,'maria alejandra','guevara','colonia san jacinto,san salvador',0,1205)
+        INSERT INTO CLIENTE(IdCliente,NomCliente,ApeCliente,DirCliente,IdGenero,IdDocIdentidad) VALUES(1321,'gerardo josue','ramires','colonia altavista,san bartolo',1,1105)
+        INSERT INTO CLIENTE(IdCliente,NomCliente,ApeCliente,DirCliente,IdGenero,IdDocIdentidad) VALUES(1421,'alexander jairo','sanchez ortiz','colonia bosques de la paz,ilopango',1,1105)
+        INSERT INTO CLIENTE(IdCliente,NomCliente,ApeCliente,DirCliente,IdGenero,IdDocIdentidad) VALUES(1521,'sergio vladimir','artiga','santa tecla,la libertad',1,1105)
+
        
 
-       INSERT INTO TELEFONOXCLIENTE(IdCliente,IdGenero,IdDocIdentidad,IdTelefonoXcliente,NumTel) VALUES(1122,1,1105,1114,'7434-5287')
-        INSERT INTO TELEFONOXCLIENTE(IdCliente,IdGenero,IdDocIdentidad,IdTelefonoXcliente,NumTel) VALUES(1222,0,1205,1214,'7477-9287') 
-        INSERT INTO TELEFONOXCLIENTE(IdCliente,IdGenero,IdDocIdentidad,IdTelefonoXcliente,NumTel) VALUES(1322,1,1105,1314,'7714-9087')
-        INSERT INTO TELEFONOXCLIENTE(IdCliente,IdGenero,IdDocIdentidad,IdTelefonoXcliente,NumTel) VALUES(1422,1,1105,1414,'7447-0007')
-        INSERT INTO TELEFONOXCLIENTE(IdCliente,IdGenero,IdDocIdentidad,IdTelefonoXcliente,NumTel) VALUES(1522,1,1105,1514,'7434-5287')
+       INSERT INTO TELEFONOXCLIENTE(IdCliente,IdGenero,IdDocIdentidad,IdTelefonoXcliente,NumTel) VALUES(1121,1,1105,1114,'7434-5287')
+        INSERT INTO TELEFONOXCLIENTE(IdCliente,IdGenero,IdDocIdentidad,IdTelefonoXcliente,NumTel) VALUES(1221,0,1205,1214,'7477-9287') 
+        INSERT INTO TELEFONOXCLIENTE(IdCliente,IdGenero,IdDocIdentidad,IdTelefonoXcliente,NumTel) VALUES(1321,1,1105,1314,'7714-9087')
+        INSERT INTO TELEFONOXCLIENTE(IdCliente,IdGenero,IdDocIdentidad,IdTelefonoXcliente,NumTel) VALUES(1421,1,1105,1414,'7447-0007')
+        INSERT INTO TELEFONOXCLIENTE(IdCliente,IdGenero,IdDocIdentidad,IdTelefonoXcliente,NumTel) VALUES(1521,1,1105,1514,'7434-5287')
 
-       INSERT INTO CORREOXCLIENTE(IdCliente,IdGenero,IdDocIdentidad,IdCorreoXcliente,CorreoCLiente) VALUES(1122,1,1105,1115,'joseA199@gmail.com')
-        INSERT INTO CORREOXCLIENTE(IdCliente,IdGenero,IdDocIdentidad,IdCorreoXcliente,CorreoCLiente) VALUES(1222,0,1205,1215,'maria19gevara@gmail.com')
-        INSERT INTO CORREOXCLIENTE(IdCliente,IdGenero,IdDocIdentidad,IdCorreoXcliente,CorreoCLiente) VALUES(1322,1,1105,1315,'gerardo20ra@gmail.com')
-        INSERT INTO CORREOXCLIENTE(IdCliente,IdGenero,IdDocIdentidad,IdCorreoXcliente,CorreoCLiente) VALUES(1422,1,1105,1415,'alexander230@gmail.com')
-        INSERT INTO CORREOXCLIENTE(IdCliente,IdGenero,IdDocIdentidad,IdCorreoXcliente,CorreoCLiente) VALUES(1522,1,1105,1515,'sergio13fc@gmail.com')
-
+       INSERT INTO CORREOXCLIENTE(IdCliente,IdGenero,IdDocIdentidad,IdCorreoXcliente,CorreoCLiente) VALUES(1121,1,1105,1115,'joseA199@gmail.com')
+        INSERT INTO CORREOXCLIENTE(IdCliente,IdGenero,IdDocIdentidad,IdCorreoXcliente,CorreoCLiente) VALUES(1221,0,1205,1215,'maria19gevara@gmail.com')
+        INSERT INTO CORREOXCLIENTE(IdCliente,IdGenero,IdDocIdentidad,IdCorreoXcliente,CorreoCLiente) VALUES(1321,1,1105,1315,'gerardo20ra@gmail.com')
+        INSERT INTO CORREOXCLIENTE(IdCliente,IdGenero,IdDocIdentidad,IdCorreoXcliente,CorreoCLiente) VALUES(1421,1,1105,1415,'alexander230@gmail.com')
+        INSERT INTO CORREOXCLIENTE(IdCliente,IdGenero,IdDocIdentidad,IdCorreoXcliente,CorreoCLiente) VALUES(1521,1,1105,1515,'sergio13fc@gmail.com')
+		
 		--OK
 		INSERT INTO EMPLEADO(codEmp,IdTipoEmp,NomEmp,ApeEmp,afpEmp,isssEmp,HoraEntradaEmp,HoraSalidaEmp,IdGenero,IdTurnoEmp,IdDocIdentidad) VALUES('0012120',1103,'mario steven','cruz rivera','705434','875314534','7:00 am','3:00 pm',1,1102,1105)
         INSERT INTO EMPLEADO(codEmp,IdTipoEmp,NomEmp,ApeEmp,afpEmp,isssEmp,HoraEntradaEmp,HoraSalidaEmp,IdGenero,IdTurnoEmp,IdDocIdentidad) VALUES('0012121',1203,'josue walter','campos paz','356771','800385678','5:00 am','1:00 pm',1,1102,1105)
@@ -84,9 +90,18 @@ use HOTEL21;
         INSERT INTO TELEFONOXEMPLEADO(codEmp,IdTipoEmp,IdGenero,IdTurnoEmp,IdTelefonoXEmpleado,NumTelEmp,IdDocIdentidad) VALUES('0012124',1203,0,1102,1516,1517,1105)
 
 
-		--DAAAAA ERRORRRRR!!!!
+		/*--DAAAAA ERRORRRRR!!!!
         INSERT INTO RESERVACION(IdHotel,IdSala,IdSalaXHotel,codEmp,IdTipoEmp,idCliente,IdGenero,IdTurnoEmp,idRes,HoraIniRes,HoraFinRes,FechaIniRes,FechaFinRes,CannonRes,numSillasRes,numMesasRes,IdServicio,IdDocIdentidad) VALUES(1112,1111,1113,'0012120',1103,1122,1,1102,1123,07:10:20am,06:19:00pm,23/09/2008,27/09/2008,12,234,56,1204,1105) 
         INSERT INTO RESERVACION(IdHotel,IdSala,IdSalaXHotel,codEmp,IdTipoEmp,idCliente,IdGenero,IdTurnoEmp,idRes,HoraIniRes,HoraFinRes,FechaIniRes,FechaFinRes,CannonRes,numSillasRes,numMesasRes,IdServicio,IdDocIdentidad) VALUES(1212,1211,1213,'0012121',1103,1222,0,1102,1223,08:31:20am,06:19:00pm,1/03/2012,4/03/2012,11,139,24,1204,1105)
         INSERT INTO RESERVACION(IdHotel,IdSala,IdSalaXHotel,codEmp,IdTipoEmp,idCliente,IdGenero,IdTurnoEmp,idRes,HoraIniRes,HoraFinRes,FechaIniRes,FechaFinRes,CannonRes,numSillasRes,numMesasRes,IdServicio,IdDocIdentidad) VALUES(1312,1311,1213,'0012122',1103,1322,1,1202,1323,12:23:23pm,06:19:00pm,12/10/2010,13/10/2010,14,310,63,1204,1105)
         INSERT INTO RESERVACION(IdHotel,IdSala,IdSalaXHotel,codEmp,IdTipoEmp,idCliente,IdGenero,IdTurnoEmp,idRes,HoraIniRes,HoraFinRes,FechaIniRes,FechaFinRes,CannonRes,numSillasRes,numMesasRes,IdServicio,IdDocIdentidad) VALUES(1412,1411,1413,'0012123',1103,1422,1,1102,1423,10:34:03am,07:31:30am,10/11/2013,12/11/2013,19,234,42,1304,1105)
         INSERT INTO RESERVACION(IdHotel,IdSala,IdSalaXHotel,codEmp,IdTipoEmp,idCliente,IdGenero,IdTurnoEmp,idRes,HoraIniRes,HoraFinRes,FechaIniRes,FechaFinRes,CannonRes,numSillasRes,numMesasRes,IdServicio,IdDocIdentidad) VALUES(1512,1511,1513,'0012124',1103,1522,1,1202,1523,03:30:24pm,06:52:02am,4/12/2014,6/12/2014,19,154,26,1304,1105) 
+		*/
+
+																																																									--hotel	--sala --salaxhotel													
+        INSERT INTO RESERVACION(IdHotel,IdSala,IdSalaXHotel,codEmp,IdTipoEmp,idCliente,IdGenero,IdTurnoEmp,idRes,HoraIniRes,HoraFinRes,FechaIniRes,FechaFinRes,CannonRes,numSillasRes,numMesasRes,IdServicio,IdDocIdentidad) VALUES(1221,1111,1113,'0012120',1103,1121,1,1102,1123,'07:10:20','18:19:00','23/09/2008','27/09/2008',12,234,56,1204,1105) 
+        INSERT INTO RESERVACION(IdHotel,IdSala,IdSalaXHotel,codEmp,IdTipoEmp,idCliente,IdGenero,IdTurnoEmp,idRes,HoraIniRes,HoraFinRes,FechaIniRes,FechaFinRes,CannonRes,numSillasRes,numMesasRes,IdServicio,IdDocIdentidad) VALUES(1222,1211,1213,'0012121',1103,1221,0,1102,1223,'08:31:20','18:19:00','1/03/2012','4/03/2012',11,139,24,1204,1105)
+        INSERT INTO RESERVACION(IdHotel,IdSala,IdSalaXHotel,codEmp,IdTipoEmp,idCliente,IdGenero,IdTurnoEmp,idRes,HoraIniRes,HoraFinRes,FechaIniRes,FechaFinRes,CannonRes,numSillasRes,numMesasRes,IdServicio,IdDocIdentidad) VALUES(1223,1311,1213,'0012122',1103,1321,1,1202,1323,'12:23:23','18:19:00','12/10/2010','13/10/2010',14,310,63,1204,1105)
+        INSERT INTO RESERVACION(IdHotel,IdSala,IdSalaXHotel,codEmp,IdTipoEmp,idCliente,IdGenero,IdTurnoEmp,idRes,HoraIniRes,HoraFinRes,FechaIniRes,FechaFinRes,CannonRes,numSillasRes,numMesasRes,IdServicio,IdDocIdentidad) VALUES(1224,1411,1413,'0012123',1103,1421,1,1102,1423,'10:34:03','19:31:30','10/11/2013','12/11/2013',19,234,42,1304,1105)
+        INSERT INTO RESERVACION(IdHotel,IdSala,IdSalaXHotel,codEmp,IdTipoEmp,idCliente,IdGenero,IdTurnoEmp,idRes,HoraIniRes,HoraFinRes,FechaIniRes,FechaFinRes,CannonRes,numSillasRes,numMesasRes,IdServicio,IdDocIdentidad) VALUES(1225,1511,1513,'0012124',1103,1521,1,1202,1523,'03:30:24','06:52:02','4/12/2014','6/12/2014',19,154,26,1304,1105) 
+	

@@ -1,8 +1,8 @@
 --Creacion de la base de datos
 
-create database HOTEL20
+--create database HOTEL
 
-use HOTEL20
+use HOTEL
 
 go
 
@@ -48,7 +48,7 @@ create table CLIENTE(
 	IdDocIdentidad int not null,
 	NomCliente varchar(20)not null,
 	ApeCliente varchar(20)not null,
-	DirCliente varchar(20),
+	DirCliente varchar(40),
 	
 	)
 
@@ -62,7 +62,7 @@ CREATE TABLE TELEFONOXCLIENTE(
     IdGenero int not null,
 	IdDocIdentidad int not null,
 	IdTelefonoXcliente int not null,
-	NumTel int null
+	NumTel varchar(20) null
 	)
 CREATE TABLE CORREOXCLIENTE(
 	IdCliente int not null,
@@ -316,7 +316,7 @@ ALTER TABLE TURNO_EMPLEADO ADD
 
 ALTER TABLE TIPO_EMPLEADO ADD
 	CONSTRAINT CK_TIPO_EMPLEADO_NOMTIPOEMPLEADO
-	CHECK (nomTipoEmp = 'ordenanza' or nomTipoEmp = "mantenimiento" or nomTipoEmp = 'recepcionista' or nomTipoEmp = 'mucama' or nomTipoEmp = 'conserje')
+	CHECK (nomTipoEmp = 'ordenanza' or nomTipoEmp = 'mantenimiento' or nomTipoEmp = 'recepcionista' or nomTipoEmp = 'mucama' or nomTipoEmp = 'conserje')
 
 ALTER TABLE SERVICIO ADD
 	CONSTRAINT	CK_SERVICIO_NOMSERVICIO
