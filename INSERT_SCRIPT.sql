@@ -1,4 +1,4 @@
-
+--SCRIPT DE INSERCION
 use HOTEL21;   
 	--OK
 	INSERT INTO GENERO(IdGenero,NomGenero) VALUES(1,'masculino')
