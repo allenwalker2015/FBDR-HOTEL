@@ -1,5 +1,5 @@
 --SCRIPT DE INSERCION
-use HOTEL;   
+use HOTEL   
 	--OK
 	INSERT INTO GENERO(IdGenero,NomGenero) VALUES(1,'masculino')
     INSERT INTO GENERO(IdGenero,NomGenero) VALUES(0,'femenino')
@@ -104,4 +104,3 @@ use HOTEL;
         INSERT INTO RESERVACION(IdHotel,IdSala,IdSalaXHotel,codEmp,IdTipoEmp,idCliente,IdGenero,IdTurnoEmp,idRes,HoraIniRes,HoraFinRes,FechaIniRes,FechaFinRes,CannonRes,numSillasRes,numMesasRes,IdServicio,IdDocIdentidad) VALUES(1223,1311,1213,'0012122',1103,1321,1,1202,1323,'12:23:23','18:19:00','12/10/2010','13/10/2010',14,310,63,1204,1105)
         INSERT INTO RESERVACION(IdHotel,IdSala,IdSalaXHotel,codEmp,IdTipoEmp,idCliente,IdGenero,IdTurnoEmp,idRes,HoraIniRes,HoraFinRes,FechaIniRes,FechaFinRes,CannonRes,numSillasRes,numMesasRes,IdServicio,IdDocIdentidad) VALUES(1224,1411,1413,'0012123',1103,1421,1,1102,1423,'10:34:03','19:31:30','10/11/2013','12/11/2013',19,234,42,1304,1105)
         INSERT INTO RESERVACION(IdHotel,IdSala,IdSalaXHotel,codEmp,IdTipoEmp,idCliente,IdGenero,IdTurnoEmp,idRes,HoraIniRes,HoraFinRes,FechaIniRes,FechaFinRes,CannonRes,numSillasRes,numMesasRes,IdServicio,IdDocIdentidad) VALUES(1225,1511,1513,'0012124',1103,1521,1,1202,1523,'03:30:24','06:52:02','4/12/2014','6/12/2014',19,154,26,1304,1105) 
-	
