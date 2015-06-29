@@ -301,3 +301,32 @@ ALTER TABLE HOTEL ADD
 	FOREIGN KEY (IdPais)
 	REFERENCES PAIS (IdPais)
 
+--CK'S
+ALTER TABLE GENERO ADD
+	CONSTRAINT CK_GENERO_NOMGENERO
+	CHECK (NomGenero = 'masculino' OR Nomgenero = 'femenino')
+
+ALTER TABLE TIPO_SALA ADD
+	CONSTRAINT CK_TIPO_SALA_NOMSALA
+	CHECK (nomTipoSala = 'Auditorio' OR nomTipoSala = 'Tipo U' or nomTipoSala = 'Aula' or nomTipoSala = 'Cóctel' or nomTipoSala= 'Banquete')
+
+ALTER TABLE TURNO_EMPLEADO ADD
+	CONSTRAINT	CK_TURNO_EMPLEADO_NOMTURNOEMP
+	CHECK (NomTurnoEmp = 'matutino' or NomTurnoEmp = 'despertino' or NomTurnoEmp = 'nocturno')
+
+ALTER TABLE TIPO_EMPLEADO ADD
+	CONSTRAINT CK_TIPO_EMPLEADO_NOMTIPOEMPLEADO
+	CHECK (nomTipoEmp = 'ordenanza' or nomTipoEmp = "mantenimiento" or nomTipoEmp = 'recepcionista' or nomTipoEmp = 'mucama' or nomTipoEmp = 'conserje')
+
+ALTER TABLE SERVICIO ADD
+	CONSTRAINT	CK_SERVICIO_NOMSERVICIO
+	CHECK (NomServicio = 'masajista' or NomServicio = 'gastronomicos' or NomServicio = 'bartender' or NomServicio = 'spa' or NomServicio = 'dj')
+
+ALTER TABLE PAIS ADD
+	CONSTRAINT CK_PAIS_NOMPAIS
+	CHECK (NomPais = 'El Salvador' or NomPais = 'Honduras' or NomPais = 'Nicaragua' or NomPais = 'Panama' or NomPais = 'Australia' or NomPais = 'Costa Rica' or NomPais = 'España')
+
+ALTER TABLE PAIS ADD
+	CONSTRAINT CK_PAIS_CONTPAIS
+	CHECK (ContPais = 'America' or ContPais = 'Europa' or ContPais = 'Oceania' or ContPais = 'Asia' or ContPais = 'Africa')
+

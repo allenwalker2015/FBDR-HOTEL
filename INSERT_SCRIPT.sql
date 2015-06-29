@@ -6,9 +6,9 @@ use HOTEL21;
 
 	--OK
     INSERT INTO TIPO_SALA(IdTipoSala,nomTipoSala,maxPerTipoSala) VALUES(1101,'Auditorio',210)
-	INSERT INTO TIPO_SALA(IdTipoSala,nomTipoSala,maxPerTipoSala) VALUES(1201,'tipo U',190)
-	INSERT INTO TIPO_SALA(IdTipoSala,nomTipoSala,maxPerTipoSala) VALUES(1301,'aula',160)
-	INSERT INTO TIPO_SALA(IdTipoSala,nomTipoSala,maxPerTipoSala) VALUES(1401,'banquete',170)
+	INSERT INTO TIPO_SALA(IdTipoSala,nomTipoSala,maxPerTipoSala) VALUES(1201,'Tipo U',190)
+	INSERT INTO TIPO_SALA(IdTipoSala,nomTipoSala,maxPerTipoSala) VALUES(1301,'Aula',160)
+	INSERT INTO TIPO_SALA(IdTipoSala,nomTipoSala,maxPerTipoSala) VALUES(1401,'Banquete',170)
 	INSERT INTO TIPO_SALA(IdTipoSala,nomTipoSala,maxPerTipoSala) VALUES(1501,'Cóctel',130)
 	--OK
     INSERT INTO SALA(IdSala,IdTipoSala,tamSala) VALUES(1111,1101,200)
@@ -23,9 +23,9 @@ use HOTEL21;
 	--OK
        INSERT INTO TIPO_EMPLEADO(IdTipoEmp,nomTipoEmp) VALUES(1103,'ordenanza')
         INSERT INTO TIPO_EMPLEADO(IdTipoEmp,nomTipoEmp) VALUES(1203,'mantenimiento')
-        INSERT INTO TIPO_EMPLEADO(IdTipoEmp,nomTipoEmp) VALUES(1303,'recesiónista')
+        INSERT INTO TIPO_EMPLEADO(IdTipoEmp,nomTipoEmp) VALUES(1303,'recepcionista')
         INSERT INTO TIPO_EMPLEADO(IdTipoEmp,nomTipoEmp) VALUES(1403,'mucama')
-        INSERT INTO TIPO_EMPLEADO(IdTipoEmp,nomTipoEmp) VALUES(1503,'Conserje')
+        INSERT INTO TIPO_EMPLEADO(IdTipoEmp,nomTipoEmp) VALUES(1503,'conserje')
 		--OK
         INSERT INTO SERVICIO(IdServicio,NomServicio,EstServicio) VALUES(1104,'masajista',0) -- estado de servicio es 1 si activo y 0 no activo
          INSERT INTO SERVICIO(IdServicio,NomServicio,EstServicio) VALUES(1204,'gastronómicos',1)
@@ -39,7 +39,7 @@ use HOTEL21;
        INSERT INTO  PAIS (IdPais,NomPais,ContPais) VALUES(1106,'Panama','America')
 	INSERT INTO  PAIS (IdPais,NomPais,ContPais) VALUES(1206,'El Salvador','America')
 	INSERT INTO  PAIS (IdPais,NomPais,ContPais) VALUES(1306,'Costa Rica','America')
-	INSERT INTO  PAIS (IdPais,NomPais,ContPais) VALUES(1406,'Australia','Australia')
+	INSERT INTO  PAIS (IdPais,NomPais,ContPais) VALUES(1406,'Australia','Oceania')
 	INSERT INTO  PAIS (IdPais,NomPais,ContPais) VALUES(1506,'España','Europa')
 	--OK
 	INSERT INTO HOTEL(IdHotel,IdPais,DirHotel,TelHotel,nomHotel,webSiteHotel,emailHotel) VALUES(1221,1206,'Punta Remedi,El Salvador','2277-7777','LA COSTA','WWW.HOTELLACOSTA.COM.','H_LACOSTA@GMAIL.COM')
